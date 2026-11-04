@@ -1,0 +1,6 @@
+# Sniffsense dependencies
+scapy>=2.5.0
+colorama>=0.4.6
+
+# Unit testing
+pytest>=7.0.0

@@ -1,0 +1,75 @@
+# ==============================================================================
+# Sniffsense .gitignore
+# ==============================================================================
+
+# --- Python Bytecode & Cache ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.pyo
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+
+# --- Virtual Environments ---
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# --- Secrets, Credentials & Local Config ---
+.env
+.env.*
+*.key
+*.pem
+secrets.*
+config.local.*
+*.cer
+*.crt
+
+# --- Editor & Operating System Metadata ---
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# --- Logs & Temporary Files ---
+*.log
+*.tmp
+*.bak
+*.swp
+*~
+
+# --- Network Packet Captures (Prevents private traffic leaks) ---
+# Ignore all capture files by default:
+*.pcap
+*.pcapng
+*.cap
+
+# BUT explicitly whitelist the synthetic, sanitised sample capture:
+!sample.pcap
+
+# Capture and testing output directories
+captures/
+output/
+test.pcap
+corrupted.pcap
+
+# --- AI Assistant & Agent Scratch Working Files ---
+.gemini/
+.antigravity/
+.system_generated/
+scratch/
+
